@@ -28,3 +28,8 @@ iptables -P OUTPUT ACCEPT
 
 // Change INPUT policy to drop all packets other than the one we configured to be accepted.
 iptables -P INPUT DROP
+
+
+// Look up the config with the following command
+
+iptables -L -n --line-numbers
