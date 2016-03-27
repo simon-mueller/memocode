@@ -28,7 +28,7 @@ server {
 	# Use only the intersection of OpenSSL's HIGH ciphers
 	# with Ephemeral (elliptic curve) Diffie-Hellmann (Forward Secrecy)
 
-	ssl_ciphers "HIGH+EDH:HIGH+EECDH";
+	ssl_ciphers "HIGH+EECDH:HIGH+EDH:@STRENGTH";
 	# prefer strong ciphers
 	ssl_prefer_server_ciphers on;
 
